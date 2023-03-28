@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 
         features="src/test/resources/features",
         glue= {"stepdefinitions", "hooks"},
-        tags="@amazon_search"  ,
+        tags="@TC01_Api"  ,
 
         dryRun= false
 
@@ -17,5 +17,4 @@ import org.junit.runner.RunWith;
 
 
 public class Runner {
-
 }
