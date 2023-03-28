@@ -1,7 +1,8 @@
 package pojos;
+
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
-@JsonIgnoreProperties
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Room {
     private String description;
     private Integer price;

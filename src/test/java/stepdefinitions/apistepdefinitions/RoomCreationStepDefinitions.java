@@ -1,5 +1,4 @@
 package stepdefinitions.apistepdefinitions;
-
 import io.cucumber.java.en.*;
 import io.restassured.response.Response;
 import pojos.Room;
@@ -17,7 +16,7 @@ public class RoomCreationStepDefinitions {
         spec.pathParams("first","api","second","rooms");
 
         //Set the expected data
-        Room expectedData = new Room("Api'dan yeni oda",123,745326,"TWIN",true);
+        Room expectedData = new Room("Api'dan yeni oda",123,345621,"TWIN",true);
 
         //Send the request and get the response
         response = given(spec).body(expectedData).post("{first}/{second}");
